@@ -123,7 +123,8 @@ body{
 	.fondo .recomendaciones ul{
 		display: flex;
 		flex-wrap: wrap;		
-		flex-direction: column;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 	/*----------RECOMENDACIONES----------------*/
