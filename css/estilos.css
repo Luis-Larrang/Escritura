@@ -21,6 +21,74 @@ body{
 		height: 100vh;
 		grid-row-gap: 1rem;		
 	}
+	/*----------NARRACIONES----------------*/
+#globalNarraciones{
+		display: grid;
+		grid-template-areas:
+		"nav"
+		"cuentos"		
+		"footer";
+		height: 100vh;
+		grid-row-gap: 1rem;
+	}		
+
+	#globalNarraciones .cuentos {
+    	grid-area: cuentos;
+   	 	display: flex;
+    	flex-wrap: wrap;
+    	align-content: flex-start;
+   		height: 90%;
+    	width: 100%;
+    	padding: 1rem;
+    	background-color: rgba(255, 255, 255, 0.6);
+	}
+	.cuentos .cuento{		
+		padding: 1rem;
+	}
+
+	/*----------NARRACIONES----------------*/
+
+	/*----------PRACTICAS----------------*/
+#globalPracticas{
+		display: grid;
+		grid-template-areas:
+		"nav"
+		"practica"
+		"video"		
+		"footer";
+		height: 100vh;
+		grid-row-gap: 1rem;
+	}
+	#globalPracticas .practica{		
+    	grid-area: practica;
+   	 	display: flex;
+    	flex-wrap: wrap;    	
+   		height: 100%;
+    	width: 100%;
+    	padding: 1rem;
+    	background-color: rgba(255, 255, 255, 0.6);	
+    	justify-content: center;
+	}
+	.practica .ejercicio{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+	}
+
+	#globalPracticas .videoConsejo{		
+    	grid-area: video;
+		display: flex;
+		flex-wrap: wrap;
+		height: 100%;
+		width: 100%;
+		padding: 1rem;
+		background-color: rgba(255, 255, 255, 0.6);
+		align-items: center;
+		flex-direction: column;
+	}
+	/*----------PRACTICAS----------------*/
 	/*---------------------HEADER CEL------------------------*/	
 	 #header{
 		grid-area: nav;
@@ -146,6 +214,82 @@ body{
 	grid-column-gap: 3rem;
 	grid-row-gap: 2rem;	
 }
+
+/*test*/
+#globalNarraciones{
+		display: grid;
+		grid-template-rows: 1fr 7fr 1fr;
+		grid-template-columns: 5% 2fr 2fr 1fr 5%;
+		grid-template-areas:
+		"nav nav nav nav nav"
+		". cuentos cuentos cuentos ."		
+		"footer footer footer footer footer";
+		height: 100vh;
+		justify-content: space-evenly;
+		grid-column-gap: 3rem;
+		grid-row-gap: 2rem;
+	}		
+
+	#globalNarraciones .cuentos {
+    	grid-area: cuentos;
+   	 	display: flex;
+    	flex-wrap: wrap;
+    	align-content: space-evenly;
+   		height: 100%;
+    	width: 100%;
+    	padding: 1rem;
+    	background-color: rgba(255, 255, 255, 0.6);
+	}
+	.cuentos .cuento{
+		/*flex: min-content; esto para desk*/
+		padding: 1rem;
+
+	}
+/*test*/
+#globalPracticas{
+		display: grid;
+		grid-template-rows: 1fr 4fr 4fr 1fr;
+		grid-template-columns: 5% 2fr 2fr 1fr 5%;
+		grid-template-areas:
+		"nav nav nav nav nav"
+		". practica practica practica ."
+		". video video video ."		
+		"footer footer footer footer footer";
+		height: 100vh;
+		justify-content: space-evenly;
+		grid-column-gap: 3rem;
+		grid-row-gap: 2rem;
+	}
+	#globalPracticas .practica{		
+    	grid-area: practica;
+   	 	display: flex;
+    	flex-wrap: wrap;    	
+   		height: 100%;
+    	width: 100%;
+    	padding: 1rem;
+    	background-color: rgba(255, 255, 255, 0.6);	
+    	justify-content: center;
+	}
+	.practica .ejercicio{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+	}
+
+	#globalPracticas .videoConsejo{		
+    	grid-area: video;
+		display: flex;
+		flex-wrap: wrap;
+		height: 100%;
+		width: 100%;
+		padding: 1rem;
+		background-color: rgba(255, 255, 255, 0.6);
+		align-items: center;
+		flex-direction: column;
+	}
+
 /*---------------------HEADER DESK--------------------*/
 #header{
 	grid-area: nav;
