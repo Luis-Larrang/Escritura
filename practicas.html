@@ -4,12 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="witdh=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<title></title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  />
+	<title>PRACTICAS</title>
 </head>
 <body>
 	<div id=globalPracticas>
 		<div id="header"> <!--Header-->
-			<div class="logo">
+			<div class="logo animate__animated animate__tada">
 				<img src="assets/logo.jpg">
 			</div>
 			<div class="nav">
@@ -26,8 +29,12 @@
 		<!--------------------BODY----------------------------->			
 	<div class=practica>
 		<div class=ejercicio>
-			<p class=subtitulo>Escribe una historia breve basada en la imagen:</p>
-			<img src="assets/practica1.jpg" alt="Practica1">
+			<div>
+				<p class=subtitulo>Escribe una historia breve basada en la imagen:</p>
+			</div>			
+			<div  class="animate__animated animate__bounce">
+				<img src="assets/practica1.jpg" alt="Practica1">
+			</div>			
 			<div>
 				<form>
 					<textarea name="ejercicio cuento">				
@@ -39,7 +46,7 @@
 			</div>				
 		</div>	
 	</div>
-		<div class=videoConsejo> 
+		<div class="videoConsejo"> 
 			ACA IRIA VIDEO IFRAME DE YOU TUBE, PERO ME ROMPIA EL WRAP.
 		</div>
 		<!--<div class=videoConsejo>
@@ -63,9 +70,10 @@
 			</div>						
 		</div> <!--Footer Fin-->
 	</div>
-	 <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>	
+	<!-- animate__animated -->
+	 <script src="js/wow.js"></script>
+     <script>
+     	new WOW().init();
+     </script>	
 </body>
 </html>
