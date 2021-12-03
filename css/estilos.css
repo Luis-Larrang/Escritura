@@ -92,6 +92,11 @@ body{
 		display: flex;
 		flex-wrap: wrap;
 	}
+	textarea:focus{
+		background: #BDF4A9;
+		transform: scale(1.3);
+	}
+
 	/*----------PRACTICAS----------------*/
 	/*----------RECOMENDACIONES----------------*/
 	#globalReco{
@@ -149,7 +154,7 @@ body{
 		align-content: center;
 		justify-content: center;
 		background-color: rgba(255, 255, 255, 0.6);
-		flex-direction: column;
+		flex-direction: column;		
 	}
 	#globalContact .ad{
 		display: flex;
@@ -161,6 +166,13 @@ body{
 		background-image: url(../assets/escribiendo_cel.jpg);
 		background-position: center;
 		background-size: cover;		
+	}
+	.itemForm input{
+		transition: all 200ms ease-in-out;
+	}
+	input:focus{
+		background: #BDF4A9;
+		transform: scale(1.3);
 	}
 	/*--------------CONTACTO--------------------*/
 	/*---------------------HEADER CEL------------------------*/	
@@ -174,10 +186,12 @@ body{
 		background-color: white;
 		height: fit-content;
 		background-color: rgba(255, 255, 255, 0.6);
-		z-index: 1000;
+		z-index: 1000;		
 	}
 	#header .logo{				
-		align-self: center;		
+		align-self: center;	
+		padding-bottom: 1rem;
+		padding-top: 0.5rem;	
 	}
 	#header .logo img{		
 		height: 3rem;		
@@ -201,10 +215,9 @@ body{
 		font-weight: 700;
 
 	}
-	#header .nav .active a{
+	#header .nav .active a{		
 		color: #00b8bc;
 	}
-
 
 	/*---------------------HEADER CEL FIN------------------------*/
 
@@ -271,24 +284,25 @@ body{
 /*----------------------------------ADAPT DESK----------------------------------------------*/
 
 @media all and (min-width: 1300px){
-	body{
-		background-color: white;
-		background-image: none;
+	body{		
+		background: linear-gradient(135deg,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);		
+		height: 100vh;
 	}
+
 	#global{
-	display: grid;
-	grid-template-rows: auto auto 1fr;
-	grid-template-columns: 5% 2fr 2fr 1fr 5%;
-	grid-template-areas:
-	"nav nav nav nav nav"
-	". intro intro ad ."
-	". intro intro ad ."
-	"footer footer footer footer footer";
-	height: 100vh;
-	justify-content: space-evenly;
-	grid-column-gap: 3rem;
-	grid-row-gap: 2rem;	
-}
+		display: grid;
+		grid-template-rows: auto auto 1fr;
+		grid-template-columns: 5% 2fr 2fr 1fr 5%;
+		grid-template-areas:
+		"nav nav nav nav nav"
+		". intro intro ad ."
+		". intro intro ad ."
+		"footer footer footer footer footer";
+		height: 100vh;
+		justify-content: space-evenly;
+		grid-column-gap: 3rem;
+		grid-row-gap: 2rem;	
+	}
 
 /*---------------NARRACIONES DESK-----------------------*/
 #globalNarraciones{
@@ -314,11 +328,10 @@ body{
     	width: 100%;
     	padding: 1rem;
     	background-color: rgba(255, 255, 255, 0.6);
-	}
+	}		
 	.cuentos .cuento{
-		/*flex: min-content; esto para desk*/
-		padding: 1rem;
-
+		flex: 1;
+		padding: 0.9rem;		
 	}
 /*---------------NARRACIONES DESK-----------------------*/
 /*-----------------PRACTICAS DESK-----------------------*/
@@ -351,8 +364,8 @@ body{
 		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
-		padding: 1rem;
-	}
+		padding: 1rem;		
+	}	
 
 	#globalPracticas .videoConsejo{		
     	grid-area: video;
@@ -398,15 +411,15 @@ body{
 		width: 100%;
 		height: 100%;
 	}
+
 /*-----------------CONTACTO DESK-----------------------*/
 
 /*-----------------RECOMENDACIONES DESK----------------*/
-	#globalReco{
-		#globalContact
+	#globalReco{				
 		display: grid;		
 		grid-template-areas:
 		"nav nav nav nav nav"
-		". reco reco reco ."			
+		". reco reco reco ."						
 		"footer footer footer footer footer";
 		height: 100vh;
 		justify-content: space-evenly;
@@ -415,7 +428,9 @@ body{
 	}
 	#globalReco .fondo{
 		grid-area: reco;
+		display: flex;				
 	}
+	
 /*-----------------RECOMENDACIONES DESK----------------*/
 
 /*---------------------HEADER DESK--------------------*/
@@ -429,30 +444,35 @@ body{
 	top: 0;
 	width: 100%;
 	background-color: white;
-	z-index: 1000;	
+	z-index: 1000;		
 }
 #header .nav{	
 	flex-grow: 1;
-	align-self: center;		
+	align-self: center;	
 }
 #header .nav ul{	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	list-style-type: none;		
+	list-style-type: none;			
 }
 .nav a{
 	padding: 0 5rem;
 	text-decoration: none;
 	color: #000;
 	border: 0.2rem solid;
-	font-size: 2rem;
-	
+	font-size: 2rem;	
 }
 #header .logo img{
 	padding: 0 5rem;
 	height: 5rem;
+}
+.menuHover:hover{
+	transform: scale(1.1);
+}
+.nav li{
+	transition: all 200ms ease-in-out;
 }
 
 /*---------------------HEADER FIN------------------------*/
@@ -488,25 +508,6 @@ body{
 	height: 100%;	
 }
 /*---------------------FIN BODY INDEX DESK---------------------*/
-.cuentos{
-	grid-area: intro;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	height: 100%;
-	width: 100%;
-	padding: 1rem;
-	align-items: center;
-}
-.cuentos .cuento{
-	flex: 1;
-	padding: 0.9rem;
-	bo
-}
-/*---------------------BODY NARRACIONES DESK---------------------*/
-
-/*---------------------FIN BODY NARRACIONES DESK---------------------*/
-
 /*---------------------FOOTER----------------------------*/
 
 #footer{
@@ -544,3 +545,10 @@ body{
 } 
 	
 
+/*TEST ANIMACION WOW*/
+.box{
+	width: auto;
+	display: inline-block;
+	padding: 2rem;
+	height: 5rem;
+}

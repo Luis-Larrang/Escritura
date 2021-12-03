@@ -4,21 +4,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="witdh=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  />
+	<title>HOME</title>
 </head>
 <body>
 	<div id=global>
 		<div id="header"> <!--Header-->
-			<div class="logo">
+			<div class="logo animate__animated animate__tada">
 				<img src="assets/logo.jpg">
 			</div>
 			<div class="nav">
 				<ul>
-					<li class=active><a href="index.html">Home</a></li>			
-					<li><a href="practicas.html">Practicas</a></li>
-					<li><a href="narraciones.html">Narraciones</a></li>
-					<li><a href="recomendaciones.html">Recomendaciones</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
+					<li class=active class=menuHover><a href="index.html">Home</a></li>			
+					<li class=menuHover><a href="practicas.html">Practicas</a></li>
+					<li class=menuHover><a href="narraciones.html">Narraciones</a></li>
+					<li class=menuHover><a href="recomendaciones.html">Recomendaciones</a></li>
+					<li class=menuHover><a href="contacto.html">Contacto</a></li>
 				</ul>
 			</div>								
 		</div> <!--Header Fin-->
@@ -50,6 +52,11 @@
 				</ul>	
 			</div>						
 		</div> <!--Footer Fin-->
-	</div>	
+	</div>
+	<!-- animate__animated -->
+	<script src="js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>	
 </body>
 </html>
