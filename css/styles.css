@@ -1,0 +1,27 @@
+.tipografia{
+	font-size: 1rem;
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.imgFondo{
+	background-image: url(../assets/librosfondodibujados_escritorio.jpg);
+	background-position: center;	
+}
+.imgAd{
+	background-image: url(../assets/escribiendo_desk.jpg);
+	background-position: center;	
+}
+
+@media and all (min-width: 768px){
+	.imgFondo{
+		min-height: 800px;
+	}
+	.tipografia{
+		font-size: 2rem;
+	}
+	.imgAd{		
+		min-height: 800px;	
+	}
+}
