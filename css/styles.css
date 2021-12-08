@@ -22,11 +22,15 @@
 	background-image: url(../assets/escribiendo_desk.jpg);
 	background-position: center;	
 	background-size: cover;	
+	min-height: 20vh;
+}
+.textWhite{
+	color: white;	
 }
 
 @media all and (min-width: 768px){
 	.imgFondo{
-		min-height: 50vh;
+		min-height: 100vh;
 	}
 	.tipografia{
 		font-size: 2rem;
@@ -34,6 +38,6 @@
 	.imgAd{				
 	}
 	.fondo{
-		min-height: 50rem;
+		min-height: 100vh;
 	}
 }
