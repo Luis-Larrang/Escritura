@@ -1,3 +1,8 @@
+body{
+	background-image: url(../assets/fondolibrospatron.jpg);
+	background-position: center;
+	background-size: repeat;
+}
 .tipografia{
 	font-size: 1rem;
 	margin-right: 1.5rem;
@@ -5,19 +10,12 @@
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
-.fondo{
-	background: linear-gradient(135deg,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
-}
 .resetLink{
 	text-decoration: none;
 	color: black;
 	list-style-type: none;
 }
-.imgFondo{
-	background-image: url(../assets/librosfondodibujados_escritorio.jpg);
-	background-position: center;
-	background-size: cover;			
-}
+
 .imgAd{
 	background-image: url(../assets/escribiendo_desk.jpg);
 	background-position: center;	
@@ -28,16 +26,23 @@
 	color: white;	
 }
 
+.fondoBlanco{
+		background:rgba(255,255,255, 0.7);
+		background-position: center;
+		background-size: cover;	
+}
+.fondoGris{
+	background-color: #D9D9D8;
+}
+
 @media all and (min-width: 768px){
-	.imgFondo{
+	.minHeight{
 		min-height: 100vh;
 	}
 	.tipografia{
 		font-size: 2rem;
 	}
 	.imgAd{				
-	}
-	.fondo{
-		min-height: 100vh;
-	}
+	}	
 }
+

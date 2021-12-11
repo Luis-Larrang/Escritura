@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="witdh=device-width, initial-scale=1">	
-	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-	  />-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  />
 	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	 <link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>NARRACIONES</title>
 </head>
 <body>
 <!--HEADER-->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="index.html">
-	    	<img src="assets/logo.jpg" class="img-fluid" alt="logo" width="30" height="24">
+	    	<img src="assets/logo.jpg" class="img-fluid animate__animated animate__heartBeat" alt="logo" width="30" height="24">
 	    </a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
@@ -22,10 +22,10 @@
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link"  href="index.html">Home</a>
+	          <a class="nav-link" aria-current="home" href="index.html">Home</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="narraciones" href="narraciones.html">Narraciones</a>
+	          <a class="nav-link active" href="narraciones.html">Narraciones</a>
 	        </li>
 	        <li class="nav-item">
 	          <a class="nav-link" href="practicas.html">Practicas</a>
@@ -40,10 +40,10 @@
 	    </div>
 	  </div>
 	</nav>
-<!--HEADER FIN-->		
+<!--HEADER FIN-->			
 
 		<!--------------------BODY----------------------------->			
-		<div class="row justify-content-md-center container-fluid fondo">
+		<div class="row justify-content-md-center container-fluid fondoBlanco minHeight my-3 pt-5">
 			<div class="col-10 offset-1 col-md-2 offset-md-1 mb-3 mt-3 wow animate__animated animate__backInLeft">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -68,7 +68,7 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
-			<div class="col-10 offset-1 col-md-2 container-fluid mb-3 mt-md-3 wow animate__animated animate__backInLeft">
+			<div class="col-10 offset-1 col-md-2 container-fluid mb-3 mt-md-3 wow animate__animated animate__fadeInLeft">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -79,26 +79,27 @@
 		</div>
 
 	<!--------------------BODY FIN----------------------------->	
-	<!--Footer-->	
-	<div class="row justify-content-md-center"> 
-		<div class="firma col-md-2 offset-4 offset-md-0">
+<!--Footer-->	
+	<div class="row fondoGris justify-content-md-center"> 
+		<div class="col-md-2 offset-4 offset-md-0">
 			<p>©Marca registrada<p>
 		</div>			
 		<!--<p>Redes sociales</p>-->
-		<div class="redesSociales col-md-7 offset-4 offset-md-0">
-			<ul class="row resetLink">
+		<div class="col-md-7 offset-4 offset-md-0">
+			<ul class="row resetLink row align-items-end">
 				<li class="col-md-4"><a href="https://www.instagram.com/" target="blank" class="resetLink">Instagram</a></li>
 				<li class="col-md-4"><a href="https://www.facebook.com/" target="blank" class="resetLink">Facebook</a></li>
 				<li class="col-md-4"><a href="https://www.linkedin.com/" target="blank" class="resetLink">Linkedin</a></li>
 			</ul>	
 		</div>
 	</div>						
-	<!--Footer Fin-->	
+<!--Footer Fin-->
+
 	<!-- animate__animated -->
-	<!--<script src="js/wow.js"></script>
+	<script src="js/wow.js"></script>
     <script>
     new WOW().init();
-    </script>-->
+    </script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>	
 </body>
 </html>
