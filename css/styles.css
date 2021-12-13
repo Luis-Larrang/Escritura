@@ -32,9 +32,11 @@ body{
 		background-size: cover;	
 }
 .fondoGris{
-	background-color: #D9D9D8;
+	background-color: #F3F3F2;
 }
-
+.fondoGradieinte{
+	background: linear-gradient(135deg, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+}
 @media all and (min-width: 768px){
 	.minHeight{
 		min-height: 100vh;
