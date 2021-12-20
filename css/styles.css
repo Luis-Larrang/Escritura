@@ -34,11 +34,11 @@ body{
 		background-position: center;
 		background-size: cover;	
 }
-.fondoGris{
-	background-color: #F3F3F2;
+.fondoPapiro{
+	background-color: #f4db9d;
 }
 .fondoGradieinte{
-	background: linear-gradient(135deg, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+	background: linear-gradient(135deg, rgba(0,42,118,1) 46%,rgba(0,42,118,1) 46%,rgba(0,20,83,1) 86%);
 }
 @media all and (min-width: 768px){
 	.minHeight{
