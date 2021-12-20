@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 	  />
 	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	 <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 	 <link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>HOME</title>
 </head>
@@ -22,19 +23,19 @@
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="home" href="index.html">Home</a>
+	          <a class="nav-link active letraCursiva" aria-current="home" href="index.html">Home</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="narraciones.html">Narraciones</a>
+	          <a class="nav-link letraCursiva" href="narraciones.html">Narraciones</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="practicas.html">Practicas</a>
+	          <a class="nav-link letraCursiva" href="practicas.html">Practicas</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="recomendaciones.html">Recomendaciones</a>
+	          <a class="nav-link letraCursiva" href="recomendaciones.html">Recomendaciones</a>
 	        </li>
 	         <li class="nav-item">
-	          <a class="nav-link" href="contacto.html">Contacto</a>
+	          <a class="nav-link letraCursiva" href="contacto.html">Contacto</a>
 	        </li>
 	      </ul>
 	    </div>
@@ -43,32 +44,27 @@
 <!--HEADER FIN-->
 
 <!--------------------BODY----------------------------->			
-	<div class="container-fluid row justify-content-md-center my-3 pt-5">
-		<div class="fondoBlanco minHeight text-dark container-fluid col-12 col-md-8 my-3 my-md-0  offset-md-1" >			  
-			<div class="text-center tipografia">Sobre este espacio.</div>
-			<p class="tipografia text-center text-wrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		  
+	<div class="container-fluid row my-3 pt-5">
+		<div class="minHeight text-dark container-fluid col-12 col-md-8 my-3 my-md-0  offset-md-1" >			  
+			<div class="text-center tipografia fondoBlanco bordesTextos">Sobre este espacio.</div>
+			<p class="tipografia text-center text-wrap fondoBlanco bordesTextos">¿Ha sentido alguna vez ganas de escribir? Un arrebato inesperado en las manos, una necesidad punzante de largar palabras en una hoja  como un relámpago que rasga el cielo sin permiso. Y sin tener la certeza para donde ir, ni para qué, se ha abandonado a la suerte de las teclas o de un lapicero mordido? ¿Ha sentido alguna vez el llamado poderoso de las letras?  Este espacio propone una forma de encuentro con uno de los tantos yo que nos habitan.  Él nos mira, está en un  lugar sin miedo adentro, sabe, confía y espera pacientemente nuestra visita . Sírvase y siéntase como en la casa de una de las más extrañas y fantásticas criaturas.</p>		  
 		</div>			
-		<div class="imgAd col-md-2 offset-md-1 container-fluid col-8 imgAd my-3 textWhite" >
+		<div class="imgAd col-md-2 offset-md-1 container-fluid col-8 imgAd my-3 textWhite radio" >
 			<p>ESTO ES UN AD!</p>
 		</div>
 	</div>
 <!--------------------BODY FIN----------------------------->
 <!--Footer-->	
-	<div class="row fondoGradieinte justify-content-md-center"> 
+	<div class="row fondoGradieinte justify-content-md-center overflow"> 
 		<div class="col-md-2 offset-4 offset-md-0">
 			<p>©Marca registrada<p>
 		</div>			
 		<!--<p>Redes sociales</p>-->
 		<div class="col-md-7 offset-4 offset-md-0">
 			<ul class="row resetLink row align-items-end">
-				<li class="col-md-4"><a href="https://www.instagram.com/" target="blank" class="resetLink">Instagram</a></li>
-				<li class="col-md-4"><a href="https://www.facebook.com/" target="blank" class="resetLink">Facebook</a></li>
-				<li class="col-md-4"><a href="https://www.linkedin.com/" target="blank" class="resetLink">Linkedin</a></li>
+				<li class="col-md-4 bx bxl-instagram"><a href="https://www.instagram.com/" target="blank" class="resetLink">Instagram</a></li>
+				<li class="col-md-4 bx bxl-facebook"><a href="https://www.facebook.com/" target="blank" class="resetLink">Facebook</a></li>
+				<li class="col-md-4 bx bxl-linkedin"><a href="https://www.linkedin.com/" target="blank" class="resetLink">Linkedin</a></li>
 			</ul>	
 		</div>
 	</div>						
@@ -79,6 +75,7 @@
     <script>
     new WOW().init();
     </script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>	
 </body>
 </html>

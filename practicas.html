@@ -6,8 +6,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 	  />
 	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	 <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 	 <link rel="stylesheet" type="text/css" href="css/styles.css">
-	<title>PRACTICAS</title>
+	<title>HOME</title>
 </head>
 <body>
 <!--HEADER-->
@@ -22,30 +23,34 @@
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link" aria-current="home" href="index.html">Home</a>
+	          <a class="nav-link active letraCursiva" aria-current="home" href="index.html">Home</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="narraciones.html">Narraciones</a>
+	          <a class="nav-link letraCursiva" href="narraciones.html">Narraciones</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link active" href="practicas.html">Practicas</a>
+	          <a class="nav-link letraCursiva" href="practicas.html">Practicas</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="recomendaciones.html">Recomendaciones</a>
+	          <a class="nav-link letraCursiva" href="recomendaciones.html">Recomendaciones</a>
 	        </li>
 	         <li class="nav-item">
-	          <a class="nav-link" href="contacto.html">Contacto</a>
+	          <a class="nav-link letraCursiva" href="contacto.html">Contacto</a>
 	        </li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
-<!--HEADER FIN-->	
-
+<!--HEADER FIN-->
 <!--------------------BODY----------------------------->
 
-	<div class="container-lg my-3 pt-5">
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	<div class="container-fluid my-5 pt-5">
+			<div class="row justify-content-md-center">
+		  		<p class="fondoBlanco tipografia bordesTextos text-center ancho">
+		  			Escribe una historia en base a las imagenes:
+		  		</p>
+		  	</div>
+		<div id="carouselExampleIndicators" class="carousel slide offset-md-2 col-md-8" data-bs-ride="carousel">
 			  <div class="carousel-indicators">
 			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -74,42 +79,38 @@
 	</div>
 	<div>
 		<form>
-		  <div class="mb-3 container-lg col-10">
-		  	<div>
-		  		<p class="fondoBlanco tipografia">
-		  			Escribe una historia en base a las imagenes:
-		  		</p>
-		  	</div>
-		    <div class="form-floating">
+		  <div class="mb-3 container-fluid col-10">
+		  
+		    <div class="form-floating row justify-content-md-center offset-md-2 col-md-8">
 			  <textarea class="form-control" placeholder="Hisotria" id="floatingTextarea2" style="height: 10rem"></textarea>			 
 			</div>	    
 		  </div>
-		  <div class="container-lg ">
+		  <div class="d-grid col-6 mx-auto">
 		  	<button type="submit" class="btn btn-light">Enviar</button>
 		  </div>	  
 		</form>
 	</div>
-	<div class="container-lg row justify-content-md-center">
-		<div class="col-10">
-			<p class="text-center tipografia fondoBlanco">Te dejamos un video con tips:</p>
+	<div class="container-fluid row justify-content-md-center">
+		<div class="col-10 row justify-content-md-center">
+			<p class="text-center tipografia fondoBlanco bordesTextos ancho">Te dejamos un video con tips:</p>
 		</div>
-		<div class="container-lg">
-			<iframe class="container-fluid offset-md-2" width="560" height="315" src="https://www.youtube.com/embed/pJPm2CGTPgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="container-fluid">
+			<iframe class="container-fluid offset-md-2 col-md-8" width="560" height="315" src="https://www.youtube.com/embed/pJPm2CGTPgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>	
 	</div>					
 <!--------------------BODY FIN----------------------------->	
 
 <!--Footer-->	
-	<div class="row fondoGradieinte justify-content-md-center"> 
+	<div class="row fondoGradieinte justify-content-md-center overflow"> 
 		<div class="col-md-2 offset-4 offset-md-0">
 			<p>©Marca registrada<p>
 		</div>			
 		<!--<p>Redes sociales</p>-->
 		<div class="col-md-7 offset-4 offset-md-0">
 			<ul class="row resetLink row align-items-end">
-				<li class="col-md-4"><a href="https://www.instagram.com/" target="blank" class="resetLink">Instagram</a></li>
-				<li class="col-md-4"><a href="https://www.facebook.com/" target="blank" class="resetLink">Facebook</a></li>
-				<li class="col-md-4"><a href="https://www.linkedin.com/" target="blank" class="resetLink">Linkedin</a></li>
+				<li class="col-md-4 bx bxl-instagram"><a href="https://www.instagram.com/" target="blank" class="resetLink">Instagram</a></li>
+				<li class="col-md-4 bx bxl-facebook"><a href="https://www.facebook.com/" target="blank" class="resetLink">Facebook</a></li>
+				<li class="col-md-4 bx bxl-linkedin"><a href="https://www.linkedin.com/" target="blank" class="resetLink">Linkedin</a></li>
 			</ul>	
 		</div>
 	</div>						
@@ -120,6 +121,7 @@
     <script>
     new WOW().init();
     </script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>	
 </body>
 </html>
