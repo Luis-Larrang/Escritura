@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
 body{	
-	background-image: url(../assets/fondolibrospatron.jpg);
+	background-image: url(../assets/fondo002.jpg);
 	background-position: center;
-	background-size: repeat;
+	background-size: cover;
 }
 .tipografia{
 	font-size: 1rem;
