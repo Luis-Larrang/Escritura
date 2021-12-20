@@ -3,6 +3,8 @@ body{
 	background-image: url(../assets/fondo002.jpg);
 	background-position: center;
 	background-size: cover;
+	font-family: 'Dancing Script';
+	font-weight: 400;
 }
 .tipografia{
 	font-size: 1rem;
@@ -43,7 +45,7 @@ body{
 		min-height: 100vh;
 	}
 	.tipografia{
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	.imgAd{				
 	}	
