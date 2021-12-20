@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
+body {
+  background-image: url(../assets/fondo002.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Dancing Script';
+  font-weight: 400;
+}
+
+.tipografia {
+  font-size: 1rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media all and (min-width: 768px) {
+  .tipografia {
+    font-size: 2rem;
+  }
+}
+
+.resetLink {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+}
+
+.imgAd {
+  background-image: url(../assets/escribiendo_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 20vh;
+}
+
+.textWhite {
+  color: white;
+}
+
+.fondoBlanco {
+  background: white;
+  background-position: center;
+  background-size: cover;
+}
+
+.fondoPapiro {
+  background-color: #f4db9d;
+}
+
+.fondoGradieinte {
+  background: linear-gradient(135deg, #002a76 46%, #002a76 46%, #001453 86%);
+}
+
+.minHeight {
+  min-height: 100vh;
+}
+
+.overflow {
+  overflow-x: hidden;
+}
+
+.bordesTextos {
+  border: 0.1rem solid black;
+  border-radius: 25px 25px 25px 25px;
+  padding: 1rem;
+}
+
+.letraCursiva {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.radio {
+  border-radius: 25px 25px 25px 25px;
+}
+
+.ancho {
+  width: 50%;
+}
+
+.cuentos div:nth-child(2n) {
+  align-self: flex-end;
+}
+
+.cuentos button:hover {
+  transform: scale(1.1);
+}
+
+.cuentos button {
+  transition: all 200ms ease-in-out;
+}
