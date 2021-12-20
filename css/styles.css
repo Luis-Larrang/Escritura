@@ -1,4 +1,5 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+body{	
 	background-image: url(../assets/fondolibrospatron.jpg);
 	background-position: center;
 	background-size: repeat;
@@ -27,7 +28,7 @@ body{
 }
 
 .fondoBlanco{
-		background:rgba(255,255,255, 0.7);
+		background:rgba(255,255,255, 1.1);
 		background-position: center;
 		background-size: cover;	
 }
@@ -42,9 +43,28 @@ body{
 		min-height: 100vh;
 	}
 	.tipografia{
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	.imgAd{				
 	}	
 }
+.overflow{
+	overflow-x: hidden;
+}
+.bordesTextos{
+	border: 0.1rem solid black;
+	border-radius: 25px 25px 25px 25px;
+	padding: 1rem;
+}
+.letraCursiva{
+	font-family: 'Dancing Script', cursive;	
+	font-weight: 700;
+	font-size: 1.5rem;
+}
 
+.radio{
+	border-radius: 25px 25px 25px 25px;
+}
+.ancho{
+	width: 50%;
+}
