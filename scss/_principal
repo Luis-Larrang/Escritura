@@ -1,34 +1,26 @@
 body{	
-	background-image: url(../assets/fondo002.jpg);
-	background-position: center;
-	background-size: cover;
+	@include imgBase ("../assets/fondo002.jpg");	
 	font-family: 'Montserrat';
-	font-weight: 300;
+	font-weight: map-get($fontWeight, light);
 }
-.tipografia{
-		font-size: 1rem;
+	.tipografia{
+		@include textGral( );
 		margin-right: 1.5rem;
 		margin-left: 1.5rem;
-		margin-top: 1em;
-		margin-bottom: 1em;
+		
 		@media all and (min-width: 768px){
-			font-size: 2rem;
-			}		
-	}	
+			font-size: 1.5rem;
+			}			
+	}
+			
 	.resetLink{
-		text-decoration: none;
-		color: black;
+		text-decoration: none;		
 		list-style-type: none;
 	}
 	.imgAd{
-		background-image: url(../assets/escribiendo_desk.jpg);
-		background-position: center;	
-		background-size: cover;	
+		@include imgBase("../assets/escribiendo_cel.jpg");
 		min-height: 20vh;
 		max-width: 90%;
-	}
-	.textWhite{
-		color: white;	
 	}
 	.fondoBlanco{
 			background:rgba(255,255,255, 1.1);
@@ -67,14 +59,27 @@ body{
 	}		
 	.cuentos{
 		div:nth-child(2n){
-		align-self: flex-end;
-		}
-		button:hover{
-		transform: scale(1.1);		
+		align-self: flex-end;				
 		}
 		button{
 			transition: all 200ms ease-in-out;
+			&:hover{
+				transform: scale(1.1);
 			}
+		}
 	}
+	.redesSociales{
+		a{
+			&::before{
 
+			} ;
+		}
+	}
+	.buttonM{
+		@include buttonReset();
+	}
+	.cruzM{
+		@include cruzReset;
+	}
+	
 	

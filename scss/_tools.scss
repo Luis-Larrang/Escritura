@@ -1,0 +1,34 @@
+@mixin textGral($fc: white, $fz: 1rem, $pt: 1em){
+	color: $fc;
+	font-size: $fz;
+	padding-top: $pt;
+}
+
+@each $k, $v in $fontWeight{
+	.font-weight-#{$k}{
+		font-weight: $v;
+	}
+}
+
+
+@mixin imgBase($imagen, $cov: cover, $cen:  center){
+	background-image: url($imagen);
+	background-position: $cen;
+	background-size: $cov;
+}
+
+@mixin buttonReset($bgc: #f4db9d, $c: black, $r: 25px 25px 25px 25px,$ff: Dancing Script, $fw: 400,$fs: 1.5rem,$bp: 0.3rem){
+	background-color: $bgc;
+	color: $c;
+	border-radius: $r;
+	font-family: $ff;
+	font-weight: $fw;
+	font-size: $fs;
+	padding: $bp;
+}
+
+@mixin cruzReset{
+	background-color: red;	
+	border-radius: 25px 25px 25px 25px;	
+}
+

@@ -2,7 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="witdh=device-width, initial-scale=1">	
+	<meta name="viewport" content="witdh=device-width, initial-scale=1">
+	<meta name="description" content="taller de escritura">	
+	<meta name="keywords"
+			content="LIBROS,CUENTOS,ESCRIBIR,AUTORES,TALLER">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 	  />
 	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -14,19 +17,19 @@
 <!--HEADER-->
 	<nav class="navbar navbar-expand-md fixed-top navbar-dark fondoGradieinte">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="index.html">
-	    	<img src="assets/logo.jpg" class="img-fluid animate__animated animate__heartBeat" alt="logo" width="30" height="24">
+	    <a class="navbar-brand col-md-2" href="index.html">
+	    	<img src="assets/logo02.png" class="img-fluid animate__animated animate__heartBeat" alt="logo" width="30" height="24">
 	    </a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
-	    <div class="collapse navbar-collapse" id="navbarNav">
+	    <div class="collapse navbar-collapse offset-md-6" id="navbarNav">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link  letraCursiva" aria-current="home" href="index.html">Home</a>
+	          <a class="nav-link letraCursiva" aria-current="home" href="index.html">Home</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link letraCursiva active" href="narraciones.html">Narraciones</a>
+	          <a class="nav-link active letraCursiva" href="narraciones.html">Narraciones</a>
 	        </li>
 	        <li class="nav-item">
 	          <a class="nav-link letraCursiva" href="practicas.html">Practicas</a>
@@ -44,11 +47,11 @@
 <!--HEADER FIN-->
 
 		<!--------------------BODY----------------------------->			
-		<div class="row justify-content-center container-fluid minHeight my-3 pt-5 cuentos">
+		<div class="row justify-content-center container-fluid minHeight my-3 pt-5 cuentos overflow">
 			<div class="col-10 offset-1 col-md-2 offset-md-1 mb-3 mt-3 wow animate__animated animate__fadeInLeft pt-3">
-				<h3 class="textWhite">Filandia</h3>
+				<h3 class="tipografia">Finlandia</h3>
 				<p class="fondoBlanco bordesTextos">El 14 de noviembre de 1995 maté sin querer a la hija mayor de mi hermana, haciendo marchatrás con el auto. Entre el impacto seco, los gritos de pánico de mi familia y el descubrimiento de que en realidad había chocado contra un tronco, ocurrieron los diez segundos más intensos de mi vida. Diez segundos durante los que me aferré al tiempo y supe que todo futuro posible sería un infierno interminable.</p>
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cuentoUno">
+				<button type="button" class="buttonM offset-1" data-bs-toggle="modal" data-bs-target="#cuentoUno">
  				 Leer cuento completo.
 				</button>
 				<div class="modal fade" id="cuentoUno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -56,7 +59,7 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <h5 class="modal-title" id="staticBackdropLabel">FILANDIA</h5>
-				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				        <button type="button" class="cruzM" data-bs-dismiss="modal" aria-label="Close"></button>
 				      </div>
 				      <div class="modal-body">
 				        El 14 de noviembre de 1995 maté sin querer a la hija mayor de mi hermana, haciendo marchatrás con el auto. Entre el impacto seco, los gritos de pánico de mi familia y el descubrimiento de que en realidad había chocado contra un tronco, ocurrieron los diez segundos más intensos de mi vida. Diez segundos durante los que me aferré al tiempo y supe que todo futuro posible sería un infierno interminable.
@@ -80,18 +83,18 @@
 						Por suerte, casi siempre es un tronco y vivimos en paz. Pero todos sabemos, por debajo de la risa y del amor y del sexo y de las noches con amigos y de los libros y los discos, que no siempre es un tronco. A veces es Finlandia.
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>				        
+				        <button type="button" class="buttonM" data-bs-dismiss="modal">Cerrar</button>				        
 				      </div>
 				    </div>
 				  </div>
 				</div>
 			</div>	
 			<div class="col-10 offset-1 col-md-2 container-fluid mb-3 mt-md-3 wow animate__animated animate__fadeInLeft pt-3">
-				<h3 class="textWhite">¡Un hombre al mar!</h3>
+				<h3 class="tipografia">¡Un hombre al mar!</h3>
 				<p class="fondoBlanco bordesTextos">¡Un hombre al mar!
 				¡Qué importa! El navío no se detiene por esto. El viento sopla; la sombría nave tiene un camino trazado, que debe recorrer necesariamente. Y pasa.
 				El hombre desaparece, luego reaparece, se sumerge y sale de nuevo a la superficie, llama, extiende los brazos, no lo oyen; el navío, estremeciéndose bajo el huracán, continúa sus maniobras, los marineros y los pasajeros no ven al hombre sumergido; su  miserable cabeza no es más que un punto en la enormidad de las olas.</p>
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cuentoDos">
+				<button type="button" class="buttonM offset-1" data-bs-toggle="modal" data-bs-target="#cuentoDos">
  				 Leer cuento completo.
 				</button>
 				<div class="modal fade" id="cuentoDos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -99,7 +102,7 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <h5 class="modal-title" id="staticBackdropLabel">¡UN HOMBRE AL MAR!</h5>
-				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				        <button type="button" class="cruzM" data-bs-dismiss="modal" aria-label="Close"></button>
 				      </div>
 				      <div class="modal-body">
 				        ¡Qué importa! El navío no se detiene por esto. El viento sopla; la sombría nave tiene un camino trazado, que debe recorrer necesariamente. Y pasa.
@@ -119,7 +122,7 @@
 						El mar es la inexorable noche social donde la penalidad arroja a sus condenados. El mar es la miseria inmensa. El alma, naufragando en este abismo, puede convertirse en un cadáver. ¿Quién la resucitará?
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>				        
+				        <button type="button" class="buttonM" data-bs-dismiss="modal">Cerrar</button>				        
 				      </div>
 				    </div>
 				  </div>
@@ -127,9 +130,9 @@
 				
 			</div>
 				<div class="col-10 offset-1 col-md-2 container-fluid mb-3 mt-md-3 wow animate__animated animate__fadeInLeft pt-3">
-					<h3 class="textWhite">La última vez</h3>
+					<h3 class="tipografia">La última vez</h3>
 					<p class="fondoBlanco bordesTextos">¿Cuándo fue la última vez que te preguntaste? No buscando una respuesta ni encontrando una certeza, sino la última vez que te escapaste de lo cotidiano y te detuviste. No por cansancio ni por desidia, sino porque sí.</p>
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cuentoTres">
+					<button type="button" class="buttonM offset-1" data-bs-toggle="modal" data-bs-target="#cuentoTres">
  				 	Leer cuento completo.
 					</button>
 					<div class="modal fade" id="cuentoTres" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -137,7 +140,7 @@
 					    <div class="modal-content">
 					      <div class="modal-header">
 					        <h5 class="modal-title" id="staticBackdropLabel">LA ÚLTIMA VEZ</h5>
-					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					        <button type="button" class="cruzM" data-bs-dismiss="modal" aria-label="Close"></button>
 					      </div>
 					      <div class="modal-body">
 					        ¿Cuándo fue la última vez que te preguntaste? No buscando una respuesta ni encontrando una certeza, sino la última vez que te escapaste de lo cotidiano y te detuviste. No por cansancio ni por desidia, sino porque sí.
@@ -154,7 +157,7 @@
 							¿Cuándo fue la última vez que te preguntaste?
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>				        
+					        <button type="button" class="buttonM" data-bs-dismiss="modal">Cerrar</button>				        
 					      </div>
 					    </div>
 					  </div>
@@ -162,7 +165,7 @@
 				
 			</div>
 				<div class="col-10 offset-1 col-md-2 container-fluid mb-3 mt-md-3 wow animate__animated animate__fadeInLeft pt-3">
-						<h3 class="textWhite">Lorem</h3>
+						<h3 class="tipografia">Lorem</h3>
 						<p class="fondoBlanco bordesTextos"> 
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -170,7 +173,7 @@
 				        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cuentoCuatro">
+				<button type="button" class="buttonM offset-1" data-bs-toggle="modal" data-bs-target="#cuentoCuatro">
  				 Leer cuento completo.
 				</button>
 				<div class="modal fade" id="cuentoCuatro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -178,7 +181,7 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <h5 class="modal-title" id="staticBackdropLabel">CUENTO PAULA</h5>
-				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				        <button type="button" class="cruzM" data-bs-dismiss="modal" aria-label="Close"></button>
 				      </div>
 				      <div class="modal-body">
 				        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -189,7 +192,7 @@
 				        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>				        
+				        <button type="button" class="buttonM" data-bs-dismiss="modal">Cerrar</button>				        
 				      </div>
 				    </div>
 				  </div>
@@ -199,16 +202,16 @@
 
 	<!--------------------BODY FIN----------------------------->	
 <!--Footer-->	
-	<div class="row fondoGradieinte justify-content-center overflow"> 
-		<div class="col-md-2 offset-6 offset-md-0">
-			<p class="textWhite">©Marca registrada<p>
+	<div class="row fondoGradieinte justify-content-center overflow align-items-end"> 
+		<div class="col-md-3 offset-5 offset-md-0 overflow">
+			<p class="tipografia">©Marca registrada<p>
 		</div>			
 		<!--<p>Redes sociales</p>-->
-		<div class="col-md-7 offset-6 offset-md-0">
-			<ul class="row resetLink row align-items-end">
-				<li class="col-md-4 bx bxl-instagram "><a href="https://www.instagram.com/" target="blank" class="resetLink textWhite">Instagram</a></li>
-				<li class="col-md-4 bx bxl-facebook"><a href="https://www.facebook.com/" target="blank" class="resetLink textWhite">Facebook</a></li>
-				<li class="col-md-4 bx bxl-linkedin"><a href="https://www.linkedin.com/" target="blank" class="resetLink textWhite">Linkedin</a></li>
+		<div class="col-md-7 offset-5 offset-md-0 overflow">
+			<ul class="row resetLink row align-items-end overflow">
+				<li class="col-md-4 bx bxl-instagram mb-1" style='color:#ffffff'><a href="https://www.instagram.com/" target="blank" class="resetLink tipografia">Instagram</a></li>
+				<li class="col-md-4 bx bxl-facebook-circle mb-1" style='color:#ffffff'><a href="https://www.facebook.com/" target="blank" class="resetLink tipografia">Facebook</a></li>
+				<li class="col-md-4 bx bxl-linkedin mb-1" style='color:#ffffff'><a href="https://www.linkedin.com/" target="blank" class="resetLink tipografia">Linkedin</a></li>
 			</ul>	
 		</div>
 	</div>						

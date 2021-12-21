@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.font-weight-bold {
+  font-weight: 600;
+}
+
+.font-weight-bold-cursive {
+  font-weight: 700;
+}
+
 body {
-  background-image: url(../assets/fondo002.jpg);
+  background-image: url("../assets/fondo002.jpg");
   background-position: center;
   background-size: cover;
   font-family: 'Montserrat';
@@ -8,35 +24,30 @@ body {
 }
 
 .tipografia {
+  color: white;
   font-size: 1rem;
+  padding-top: 1em;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 @media all and (min-width: 768px) {
   .tipografia {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
 .resetLink {
   text-decoration: none;
-  color: black;
   list-style-type: none;
 }
 
 .imgAd {
-  background-image: url(../assets/escribiendo_desk.jpg);
+  background-image: url("../assets/escribiendo_cel.jpg");
   background-position: center;
   background-size: cover;
   min-height: 20vh;
   max-width: 90%;
-}
-
-.textWhite {
-  color: white;
 }
 
 .fondoBlanco {
@@ -85,10 +96,25 @@ body {
   align-self: flex-end;
 }
 
+.cuentos button {
+  transition: all 200ms ease-in-out;
+}
+
 .cuentos button:hover {
   transform: scale(1.1);
 }
 
-.cuentos button {
-  transition: all 200ms ease-in-out;
+.buttonM {
+  background-color: #f4db9d;
+  color: black;
+  border-radius: 25px 25px 25px 25px;
+  font-family: Dancing Script;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+}
+
+.cruzM {
+  background-color: red;
+  border-radius: 25px 25px 25px 25px;
 }
