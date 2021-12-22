@@ -6,12 +6,26 @@ body{
 	.tipografia{
 		@include textGral( );
 		margin-right: 1.5rem;
-		margin-left: 1.5rem;
-		
+		margin-left: 1.5rem;		
 		@media all and (min-width: 768px){
 			font-size: 1.5rem;
-			}			
-	}
+			}
+		&--black{
+			@include textGral(black)
+			margin-right: 1.5rem;
+			margin-left: 1.5rem;
+				@media all and (min-width: 768px){
+				font-size: 1.5rem;
+				}
+		}
+		&--letraChica{
+			@include textGral(white,0.8rem)	
+			@media all and (min-width: 768px){
+			font-size: 1.1rem;
+			}		
+		}		
+	}				
+	
 			
 	.resetLink{
 		text-decoration: none;		
@@ -22,10 +36,13 @@ body{
 		min-height: 20vh;
 		max-width: 90%;
 	}
-	.fondoBlanco{
-			background:rgba(255,255,255, 1.1);
+	.fondoBlueTrans{
+			background:rgba(0, 12, 76, 0.6);
 			background-position: center;
-			background-size: cover;	
+			background-size: cover;
+			@media all and (min-width: 768px){
+				background: none;
+			}	
 	}
 	.fondoPapiro{
 		background-color: #f4db9d;
@@ -53,9 +70,9 @@ body{
 	}
 	.radio{
 		border-radius: 25px 25px 25px 25px;
-	}
-	.ancho{
-		width: 50%;
+		&--medium{
+			border-radius: 15px 15px 15px 15px;
+		}
 	}		
 	.cuentos{
 		div:nth-child(2n){
@@ -80,6 +97,9 @@ body{
 	}
 	.cruzM{
 		@include cruzReset;
+	}
+	.papiro{
+		@include imgBase("../assets/fondopapiro.jpg");	
 	}
 	
 	

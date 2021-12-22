@@ -37,6 +37,32 @@ body {
   }
 }
 
+.tipografia--black {
+  color: black;
+  font-size: 1rem;
+  padding-top: 1em;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+@media all and (min-width: 768px) {
+  .tipografia--black {
+    font-size: 1.5rem;
+  }
+}
+
+.tipografia--letraChica {
+  color: white;
+  font-size: 0.8rem;
+  padding-top: 1em;
+}
+
+@media all and (min-width: 768px) {
+  .tipografia--letraChica {
+    font-size: 1.1rem;
+  }
+}
+
 .resetLink {
   text-decoration: none;
   list-style-type: none;
@@ -50,10 +76,16 @@ body {
   max-width: 90%;
 }
 
-.fondoBlanco {
-  background: white;
+.fondoBlueTrans {
+  background: rgba(0, 12, 76, 0.6);
   background-position: center;
   background-size: cover;
+}
+
+@media all and (min-width: 768px) {
+  .fondoBlueTrans {
+    background: none;
+  }
 }
 
 .fondoPapiro {
@@ -88,8 +120,8 @@ body {
   border-radius: 25px 25px 25px 25px;
 }
 
-.ancho {
-  width: 50%;
+.radio--medium {
+  border-radius: 15px 15px 15px 15px;
 }
 
 .cuentos div:nth-child(2n) {
@@ -117,4 +149,10 @@ body {
 .cruzM {
   background-color: red;
   border-radius: 25px 25px 25px 25px;
+}
+
+.papiro {
+  background-image: url("../assets/fondopapiro.jpg");
+  background-position: center;
+  background-size: cover;
 }
