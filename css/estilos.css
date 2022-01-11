@@ -16,11 +16,20 @@
 }
 
 body {
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+.fondo {
   background-image: url("../assets/fondo002.jpg");
   background-position: center;
   background-size: cover;
-  font-family: 'Montserrat';
-  font-weight: 300;
+}
+
+.fondoSimple {
+  background-image: url("../assets/fondo001.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .tipografia {
@@ -41,20 +50,14 @@ body {
   color: black;
   font-size: 1rem;
   padding-top: 1em;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-}
-
-@media all and (min-width: 768px) {
-  .tipografia--black {
-    font-size: 1.5rem;
-  }
 }
 
 .tipografia--letraChica {
-  color: white;
-  font-size: 0.8rem;
+  color: 0.8rem;
+  font-size: 1rem;
   padding-top: 1em;
+  margin-left: none;
+  margin-right: none;
 }
 
 @media all and (min-width: 768px) {
@@ -88,6 +91,10 @@ body {
   }
 }
 
+.fondoBlueTrans--on {
+  background: rgba(0, 12, 76, 0.6);
+}
+
 .fondoPapiro {
   background-color: #f4db9d;
 }
@@ -100,6 +107,16 @@ body {
   min-height: 100vh;
 }
 
+@media all and (min-width: 768px) {
+  .minHeight {
+    min-height: 84.5vh;
+  }
+}
+
+.minHeight--narr {
+  min-height: 100vh;
+}
+
 .overflow {
   overflow-x: hidden;
 }
@@ -108,6 +125,15 @@ body {
   border: 0.1rem solid black;
   border-radius: 25px 25px 25px 25px;
   padding: 1rem;
+  width: 50%;
+}
+
+.bordesTextos--full {
+  width: 100%;
+}
+
+.separador {
+  border-top: 0.3rem solid white;
 }
 
 .letraCursiva {
@@ -155,4 +181,29 @@ body {
   background-image: url("../assets/fondopapiro.jpg");
   background-position: center;
   background-size: cover;
+}
+
+@media all and (min-width: 768px) {
+  .height {
+    height: 100vh;
+  }
+}
+
+input:focus {
+  background-image: url("../assets/fondopapiro.jpg");
+  background-position: center;
+  background-size: cover;
+  transform: scale(1, 1);
+}
+
+.selectGender {
+  border-bottom: solid 0.1rem black;
+}
+
+@media all and (min-width: 768px) {
+  .selectGender {
+    border-radius: 15px 15px 15px 15px;
+    border: solid black;
+    width: 20%;
+  }
 }

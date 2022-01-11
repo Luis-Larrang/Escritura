@@ -1,7 +1,12 @@
-body{	
-	@include imgBase ("../assets/fondo002.jpg");	
+body{		
 	font-family: 'Montserrat';
 	font-weight: map-get($fontWeight, light);
+}
+.fondo{
+	@include imgBase ("../assets/fondo002.jpg");
+}
+.fondoSimple{
+	@include imgBase ("../assets/fondo001.jpg");
 }
 	.tipografia{
 		@include textGral( );
@@ -11,22 +16,17 @@ body{
 			font-size: 1.5rem;
 			}
 		&--black{
-			@include textGral(black)
-			margin-right: 1.5rem;
-			margin-left: 1.5rem;
-				@media all and (min-width: 768px){
-				font-size: 1.5rem;
-				}
+			@include textGral(black)				
 		}
 		&--letraChica{
-			@include textGral(white,0.8rem)	
+			@include textGral(0.8rem)
+			margin-left: none;
+			margin-right: none;				
 			@media all and (min-width: 768px){
-			font-size: 1.1rem;
+			font-size: 1.1rem;						
 			}		
 		}		
-	}				
-	
-			
+	}			
 	.resetLink{
 		text-decoration: none;		
 		list-style-type: none;
@@ -42,6 +42,9 @@ body{
 			background-size: cover;
 			@media all and (min-width: 768px){
 				background: none;
+			}
+			&--on{
+				background:rgba(0, 12, 76, 0.6);				
 			}	
 	}
 	.fondoPapiro{
@@ -51,9 +54,15 @@ body{
 		background: $bgColorGradient;
 	}
 	
-		.minHeight{
+	.minHeight{
+		min-height: 100vh;
+		@media all and (min-width: 768px){
+			min-height: 84.5vh;
+		}
+		&--narr{
 			min-height: 100vh;
-		}		
+		}
+	}		
 	
 	.overflow{
 		overflow-x: hidden;
@@ -62,7 +71,15 @@ body{
 		border: 0.1rem solid black;
 		border-radius: 25px 25px 25px 25px;
 		padding: 1rem;
+		width: 50%;		
+		&--full{
+			width: 100%;
+		}
 	}
+	.separador{
+		border-top: 0.3rem solid white;
+	}
+	
 	.letraCursiva{
 		font-family: 'Dancing Script', cursive;	
 		font-weight: 700;
@@ -84,14 +101,7 @@ body{
 				transform: scale(1.1);
 			}
 		}
-	}
-	.redesSociales{
-		a{
-			&::before{
-
-			} ;
-		}
-	}
+	}	
 	.buttonM{
 		@include buttonReset();
 	}
@@ -101,5 +111,23 @@ body{
 	.papiro{
 		@include imgBase("../assets/fondopapiro.jpg");	
 	}
+	.height{		
+		@media all and (min-width: 768px){
+			height: 100vh;
+		}
+	}	
+	input:focus{
+		@include imgBase("../assets/fondopapiro.jpg");
+		transform: scale(1, 1);
+	}
+	.selectGender{
+		border-bottom: solid 0.1rem black;	  
+	  	@media all and (min-width: 768px){
+		  	border-radius: 15px 15px 15px 15px;
+			border: solid black;
+			width: 20%;
+	  	}
+	}
+
 	
 	
