@@ -1,7 +1,12 @@
-body{	
-	@include imgBase ("../assets/fondo002.jpg");	
+body{		
 	font-family: 'Montserrat';
 	font-weight: map-get($fontWeight, light);
+}
+.fondo{
+	@include imgBase ("../assets/fondo002.jpg");
+}
+.fondoSimple{
+	@include imgBase ("../assets/fondo001.jpg");
 }
 	.tipografia{
 		@include textGral( );
@@ -50,7 +55,10 @@ body{
 	}
 	
 	.minHeight{
-		min-height: 81.5vh;
+		min-height: 100vh;
+		@media all and (min-width: 768px){
+			min-height: 84.5vh;
+		}
 		&--narr{
 			min-height: 100vh;
 		}
@@ -93,14 +101,7 @@ body{
 				transform: scale(1.1);
 			}
 		}
-	}
-	.redesSociales{
-		a{
-			&::before{
-
-			} ;
-		}
-	}
+	}	
 	.buttonM{
 		@include buttonReset();
 	}
@@ -112,8 +113,21 @@ body{
 	}
 	.height{		
 		@media all and (min-width: 768px){
-			height: 80vh;
+			height: 100vh;
 		}
+	}	
+	input:focus{
+		@include imgBase("../assets/fondopapiro.jpg");
+		transform: scale(1, 1);
 	}
+	.selectGender{
+		border-bottom: solid 0.1rem black;	  
+	  	@media all and (min-width: 768px){
+		  	border-radius: 15px 15px 15px 15px;
+			border: solid black;
+			width: 20%;
+	  	}
+	}
+
 	
 	

@@ -16,11 +16,20 @@
 }
 
 body {
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+.fondo {
   background-image: url("../assets/fondo002.jpg");
   background-position: center;
   background-size: cover;
-  font-family: 'Montserrat';
-  font-weight: 300;
+}
+
+.fondoSimple {
+  background-image: url("../assets/fondo001.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .tipografia {
@@ -95,7 +104,13 @@ body {
 }
 
 .minHeight {
-  min-height: 81.5vh;
+  min-height: 100vh;
+}
+
+@media all and (min-width: 768px) {
+  .minHeight {
+    min-height: 84.5vh;
+  }
 }
 
 .minHeight--narr {
@@ -170,6 +185,25 @@ body {
 
 @media all and (min-width: 768px) {
   .height {
-    height: 80vh;
+    height: 100vh;
+  }
+}
+
+input:focus {
+  background-image: url("../assets/fondopapiro.jpg");
+  background-position: center;
+  background-size: cover;
+  transform: scale(1, 1);
+}
+
+.selectGender {
+  border-bottom: solid 0.1rem black;
+}
+
+@media all and (min-width: 768px) {
+  .selectGender {
+    border-radius: 15px 15px 15px 15px;
+    border: solid black;
+    width: 20%;
   }
 }

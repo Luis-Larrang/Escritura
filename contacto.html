@@ -15,7 +15,7 @@
 </head>
 <body class="overflow">
 <!--HEADER-->
-	<nav class="navbar navbar-expand-md fixed-top navbar-dark fondoGradieinte">
+	<nav class="navbar navbar-expand-md fixed-top border-3 border-bottom navbar-dark fondoGradieinte">
 	  <div class="container-fluid">
 	    <a class="navbar-brand col-md-2" href="index.html">
 	    	<img src="assets/logo02.png" class="img-fluid animate__animated animate__heartBeat" alt="logo" width="30" height="24">
@@ -45,70 +45,72 @@
 	  </div>
 	</nav>
 <!--HEADER FIN-->
-<!--------------------BODY----------------------------->			
-	<div class="row offset-1 col-10 offset-md-2 col-md-8 my-3 pt-5 ">
-		<div class="col-10 offset-1 offset-md-1 mt-4 radio--medium py-3 fondoPapiro">
-			<h1 class="tipografia--black text-center" >Contacto:</h1>
-			<form>
-			  <div class="mb-3">
-			    <label for="exampleInputEmail1" class="form-label ">Nombre</label>
-			    <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
-			    <div id="emailHelp" class="form-text ">Ingrese su nombre.</div>
-			  </div>
-			  <div class="mb-3">
-			    <label for="exampleInputEmail1" class="form-label ">Apellido</label>
-			    <input type="text" class="form-control" id="apellido" aria-describedby="emailHelp">
-			    <div id="emailHelp" class="form-text ">Ingrese su apellido.</div>
-			  </div>
-			  <div class="mb-3">
-			    <label for="exampleInputEmail1" class="form-label ">Email</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-			    <div id="emailHelp" class="form-text ">Nunca compartiremos tu información con nadie.</div>
-			  </div>
-			  <div class="mb-3">
-			    <label for="contraseña" class="form-label ">Contraseña</label>
-			    <input type="password" class="form-control" id="contraseña">
-			  </div>
-			  <div class="checked row justify-content-center px-md-5 my-3 ps-5">
-			  	<div class="form-check col-md-4">
-				  <input class="form-check-input" type="radio" name="genero" id="masculino">
-				  <label class="form-check-label " for="masculino">
-				    Masculino
-				  </label>
-				</div>
-				<div class="form-check col-md-4">
-				  <input class="form-check-input" type="radio" name="genero" id="femenino" checked>
-				  <label class="form-check-label  " for="femenino">
-				    Femenino
-				  </label>
-				</div>
-				<div class="form-check col-md-4">
-				  <input class="form-check-input" type="radio" name="genero" id="otro">
-				  <label class="form-check-label " for="otro">
-				    Otro
-				  </label>
-				</div>
-			   </div>
-			   <div class="mb-3">
-			      <label for="pais" class="form-label ">País</label>
-			      <select id="pais" class="form-select">
-			        <option>Argentina</option>
-			        <option>Brasil</option>
-			        <option>Chile</option>
-			        <option>Uruguay</option>
-			        <option>Bolivia</option>
-			      </select>
-			    </div>
-			   <div class="container-fluid col-md-2 col-6">
-				  <button class="buttonM" type="button">Unirte</button>				 
-				</div>			   					  
-			  </form>
-		</div>	
-		<div class="container-fluid offset-md-2 col-md-8 imgAd my-3 radio row justify-content-center offset-1 col-10">
-			<p class="tipografia">Unite a nuestra</p>
-			<p class="tipografia">comunidad literaria</p>
+<!--------------------BODY----------------------------->
+	<div class="fondoSimple">		
+		<div class="row offset-1 col-10 offset-md-2 col-md-8 my-1 pt-5 font-weight-bold">
+			<div class="col-10 offset-1 offset-md-1 mt-4 radio--medium py-3 fondoPapiro">
+				<h1 class="tipografia tipografia--black text-center" >Contacto:</h1>
+				<form action="trabajandoeneso.html">
+				  <div class="mb-3">
+				    <label for="exampleInputEmail1" class="form-label ">Nombre</label>
+				    <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+				    <div id="emailHelp" class="form-text ">Ingrese su nombre.</div>
+				  </div>
+				  <div class="mb-3">
+				    <label for="exampleInputEmail1" class="form-label ">Apellido</label>
+				    <input type="text" class="form-control" id="apellido" aria-describedby="emailHelp">
+				    <div id="emailHelp" class="form-text ">Ingrese su apellido.</div>
+				  </div>
+				  <div class="mb-3">
+				    <label for="exampleInputEmail1" class="form-label ">Email</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				    <div id="emailHelp" class="form-text ">Nunca compartiremos tu información con nadie.</div>
+				  </div>
+				  <div class="mb-3">
+				    <label for="contraseña" class="form-label ">Contraseña</label>
+				    <input type="password" class="form-control" id="contraseña">
+				  </div>
+				  <div class="checked row justify-content-center px-md-5 my-md-3 ps-md-5">
+				  	<div class="form-check col-md-4 ps-md-3 me-3 selectGender text-center">
+					  <input class="form-check-input ms-4 ms-md-0" type="radio" name="genero" id="masculino">
+					  <label class="form-check-label" for="masculino">
+					    Masculino
+					  </label>
+					</div>
+					<div class="form-check col-md-4 ps-md-3 me-3 selectGender text-center">
+					  <input class="form-check-input ms-4 ms-md-0" type="radio" name="genero" id="femenino" checked>
+					  <label class="form-check-label" for="femenino">
+					    Femenino
+					  </label>
+					</div>
+					<div class="form-check col-md-4 ps-md-3 me-3 selectGender text-center">
+					  <input class="form-check-input ms-4 ms-md-0" type="radio" name="genero" id="otro">
+					  <label class="form-check-label " for="otro">
+					    Otro
+					  </label>
+					</div>
+				   </div>
+				   <div class="mb-3">
+				      <label for="pais" class="form-label ">País</label>
+				      <select id="pais" class="form-select">
+				        <option>Argentina</option>
+				        <option>Brasil</option>
+				        <option>Chile</option>
+				        <option>Uruguay</option>
+				        <option>Bolivia</option>
+				      </select>
+				    </div>
+				   <div class="container-fluid col-md-2 col-6">
+					  <button class="buttonM" type="submit">Unirte</button>				 
+					</div>			   					  
+				  </form>
+			</div>	
+			<div class="container-fluid offset-md-2 col-md-8 imgAd my-3 radio row justify-content-center offset-1 col-10">
+				<p class="tipografia tipografia--black font-weight-bold">Unite a nuestra</p>
+				<p class="tipografia tipografia--black font-weight-bold">comunidad literaria</p>
+			</div>
 		</div>
-	</div>
+	</div>		
 <!--------------------BODY FIN----------------------------->
 <!--Footer-->	
 	<div class="row fondoGradieinte justify-content-center align-items-end overflow"> 
