@@ -8,126 +8,126 @@ body{
 .fondoSimple{
 	@include imgBase ("../assets/fondo001.jpg");
 }
-	.tipografia{
-		@include textGral( );
-		margin-right: 1.5rem;
-		margin-left: 1.5rem;		
-		@media all and (min-width: 768px){
-			font-size: 1.5rem;
-			}
-		&--black{
-			@include textGral(black)				
-		}
-		&--letraChica{
-			@include textGral(0.8rem)
-			margin-left: none;
-			margin-right: none;				
-			@media all and (min-width: 768px){
-			font-size: 1.1rem;						
-			}		
-		}		
-	}			
-	.resetLink{
-		text-decoration: none;		
-		list-style-type: none;
-	}
-	.imgAd{
-		@include imgBase("../assets/escribiendo_cel.jpg");
-		min-height: 20vh;
-		max-width: 90%;
-	}
-	.fondoBlueTrans{
-			background:rgba(0, 12, 76, 0.6);
-			background-position: center;
-			background-size: cover;
-			@media all and (min-width: 768px){
-				background: none;
-			}
-			&--on{
-				background:rgba(0, 12, 76, 0.6);				
-			}	
-	}
-	.fondoPapiro{
-		background-color: #f4db9d;
-	}
-	.fondoGradieinte{
-		background: $bgColorGradient;
-	}
-	
-	.minHeight{
-		min-height: 100vh;
-		@media all and (min-width: 768px){
-			min-height: 84.5vh;
-		}
-		&--narr{
-			min-height: 100vh;
-		}
-	}		
-	
-	.overflow{
-		overflow-x: hidden;
-	}
-	.bordesTextos{
-		border: 0.1rem solid black;
-		border-radius: 25px 25px 25px 25px;
-		padding: 1rem;
-		width: 50%;		
-		&--full{
-			width: 100%;
-		}
-	}
-	.separador{
-		border-top: 0.3rem solid white;
-	}
-	
-	.letraCursiva{
-		font-family: 'Dancing Script', cursive;	
-		font-weight: 700;
+.tipografia{
+	@include textGral( );
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;		
+	@media all and (min-width: 768px){
 		font-size: 1.5rem;
-	}
-	.radio{
-		border-radius: 25px 25px 25px 25px;
-		&--medium{
-			border-radius: 15px 15px 15px 15px;
 		}
-	}		
-	.cuentos{
-		div:nth-child(2n){
-		align-self: flex-end;				
-		}
-		button{
-			transition: all 200ms ease-in-out;
-			&:hover{
-				transform: scale(1.1);
-			}
-		}
-	}	
-	.buttonM{
-		@include buttonReset();
+	&--black{
+		@include textGral(black)				
 	}
-	.cruzM{
-		@include cruzReset;
-	}
-	.papiro{
-		@include imgBase("../assets/fondopapiro.jpg");	
-	}
-	.height{		
+	&--letraChica{
+		@include textGral(0.8rem)
+		margin-left: none;
+		margin-right: none;				
 		@media all and (min-width: 768px){
-			height: 100vh;
+		font-size: 1.1rem;						
+		}		
+	}		
+}			
+.resetLink{
+	text-decoration: none;		
+	list-style-type: none;
+}
+.imgAd{
+	@include imgBase("../assets/escribiendo.jpg");
+	min-height: 20vh;
+	max-width: 90%;
+}
+.fondoBlueTrans{
+		background:rgba(0, 12, 76, 0.6);
+		background-position: center;
+		background-size: cover;
+		@media all and (min-width: 768px){
+			background: none;
 		}
-	}	
-	input:focus{
-		@include imgBase("../assets/fondopapiro.jpg");
-		transform: scale(1, 1);
+		&--on{
+			background:rgba(0, 12, 76, 0.6);				
+		}	
+}
+.fondoPapiro{
+	background-color: #f4db9d;
+}
+.fondoGradieinte{
+	background: $bgColorGradient;
+}
+
+.minHeight{
+	min-height: 100vh;
+	@media all and (min-width: 768px){
+		min-height: 84.5vh;
 	}
-	.selectGender{
-		border-bottom: solid 0.1rem black;	  
-	  	@media all and (min-width: 768px){
-		  	border-radius: 15px 15px 15px 15px;
-			border: solid black;
-			width: 20%;
-	  	}
+	&--narr{
+		min-height: 100vh;
 	}
+}		
+
+.overflow{
+	overflow-x: hidden;
+}
+.bordesTextos{
+	border: 0.1rem solid black;
+	border-radius: 25px 25px 25px 25px;
+	padding: 1rem;
+	width: 50%;		
+	&--full{
+		width: 100%;
+	}
+}
+.separador{
+	border-top: 0.3rem solid white;
+}
+
+.letraCursiva{
+	font-family: 'Dancing Script', cursive;	
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+.radio{
+	border-radius: 25px 25px 25px 25px;
+	&--medium{
+		border-radius: 15px 15px 15px 15px;
+	}
+}		
+.cuentos{
+	div:nth-child(2n){
+	align-self: flex-end;				
+	}
+	button{
+		transition: all 200ms ease-in-out;
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+}	
+.buttonM{
+	@include buttonReset();
+}
+.cruzM{
+	@include cruzReset;
+}
+.papiro{
+	@include imgBase("../assets/fondopapiro.jpg");	
+}
+.height{		
+	@media all and (min-width: 768px){
+		height: 100vh;
+	}
+}	
+input:focus{
+	@include imgBase("../assets/fondopapiro.jpg");
+	transform: scale(1, 1);
+}
+.selectGender{
+	border-bottom: solid 0.1rem black;	  
+  	@media all and (min-width: 768px){
+	  	border-radius: 15px 15px 15px 15px;
+		border: solid black;
+		width: 20%;
+  	}
+}
 
 	
 	
